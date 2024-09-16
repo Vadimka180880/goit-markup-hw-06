@@ -168,7 +168,7 @@ img {
 /* #region Main */
 /* Hero Section Styles */
 .hero-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/people-office1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -184,10 +184,12 @@ img {
     line-height: 1.07; 
     letter-spacing: 0.02em; 
     color: var(--cl-main-background-light); 
-    max-width: 496px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .btn-hero {
