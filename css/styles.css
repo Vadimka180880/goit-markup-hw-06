@@ -126,7 +126,7 @@ img {
     margin-left: auto;
 }
 .page-nav li:first-child .nav-link {
-    color: var(--cl-logo-ocean);
+    color: #404bbf;
 }
 .nav-link::after {
     content: ''; 
@@ -135,7 +135,7 @@ img {
     left: 0; 
     bottom: -1px; 
     height: 4px; 
-    background-color: var(--cl-logo-ocean); 
+    background-color: #404bbf;
     border-radius: 2px; 
 }
 .page-nav li:first-child .nav-link {
