@@ -99,8 +99,7 @@ img {
 .contacts-list {
     display: flex;
     gap: 40px;
-    position: relative;
-    color: var(--cl-logo-ocean);
+    
 }
 
 .nav-link,
@@ -109,6 +108,8 @@ img {
     padding: 24px 0;
     color: #2e2f42;
     display: block;
+    position: relative;
+    color: var(--cl-logo-ocean);
 }
 
 .nav-link:hover,
