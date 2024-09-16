@@ -109,7 +109,6 @@ img {
     color: #2e2f42;
     display: block;
     position: relative;
-    color: var(--cl-logo-ocean);
 }
 
 .nav-link:hover,
@@ -126,6 +125,36 @@ img {
     font-style: normal;
     margin-left: auto;
 }
+.page-nav li:first-child .nav-link {
+    color: var(--cl-logo-ocean);
+}
+.nav-link::after {
+    content: ''; 
+    width: 100%; 
+    position: absolute; 
+    left: 0; 
+    bottom: -1px; 
+    height: 4px; 
+    background-color: var(--cl-logo-ocean); 
+    border-radius: 2px; 
+}
+.page-nav li:first-child .nav-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-nav li:first-child .nav-link:hover,
+.page-nav li:first-child .nav-link:focus {
+    color: var(--cl-logo-second); 
+}
+.contacts-list li:first-child .cont-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list li:first-child .cont-link:hover,
+.contacts-list li:first-child .cont-link:focus {
+    color: var(--cl-logo-second);  
+}
+
 /* #endregion header */
 
 
