@@ -332,6 +332,25 @@ img {
 .portfolio .title, .portfolio .description {
     margin: 5px 0; 
 }
+.social-media svg {
+    fill: var(--cl-navy-blue); 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: var(--cl-logo-ocean); 
+    padding: 10px; 
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s; 
+}
+
+.social-media li {
+    display: flex; 
+    display: inline-block;
+}
+.social-media svg:hover {
+    background-color: var(--cl-logo-ocean); 
+}
+
 /* #endregion Our Team */
 
 
