@@ -581,6 +581,10 @@ img {
     color: var(--white);
 }
 
+.footer.footer-content.footer-text p {
+    color: #FFFFFF;
+}
+
 .footer .social-media-icons {
     gap: 16px;
     display: flex;
