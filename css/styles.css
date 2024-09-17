@@ -299,7 +299,7 @@ img {
 }
 
 .team-desc {
-    padding-top: 32px;
+    padding-top: 32px 0;
     padding-bottom: 32px;
     text-align: center;
 }
@@ -352,20 +352,35 @@ img {
 .social-media li {
     width: 40px;
     height: 40px;
+    border-radius: 50%; 
+    background-color: #4d5ae5;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    trans
 
+}
+.social-media .icon {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff; 
 }
 .social-media {
     display: flex;
     justify-content: center;
     gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-media li:hover,
+.social-media li:focus {
+    background-color: #404bbf; 
 }
 
-.social-media svg:hover {
-    background-color: var(--cl-logo-ocean); 
-}
 .team-list li:first-child {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    
 }
 .team-desc {
     padding: 32px 0;
