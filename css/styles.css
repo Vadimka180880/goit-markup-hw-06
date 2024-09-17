@@ -501,7 +501,7 @@ img {
     text-decoration: underline;
 }
 
-.description {
+.team-desc.description {
     color: var(--cl-main-background-light)
 }
 .footer-text {
