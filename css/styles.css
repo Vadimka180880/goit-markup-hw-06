@@ -293,7 +293,6 @@ img {
 
 .team-list {
     list-style: none;
-    
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-around;
@@ -586,7 +585,9 @@ img {
     align-items: center;
     justify-content: center;
 }
-
+.footer .social-media-icon-item .social-media-icon-link {
+    display: flex;
+}
 .footer .social-text {
     display: block;
     font-weight: 500;
