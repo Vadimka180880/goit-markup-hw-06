@@ -293,7 +293,7 @@ img {
 
 .team-list {
     list-style: none;
-    display: flex;
+    
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-around;
@@ -592,14 +592,12 @@ img {
     font-weight: 500;
     margin-bottom: 16px;
     color: #FFFFFF;
-    display: flex;
 }
 
 
 .footer .social-media-icons {
     gap: 16px;
     display: flex;
-    
 }
 .footer .social-media-icon-item {
     width: 40px;
