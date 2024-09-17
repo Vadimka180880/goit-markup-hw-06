@@ -499,7 +499,9 @@ img {
     text-transform: uppercase;
     color: var(--cl-logo-second);
 }
-
+.footer .footer-content {
+    margin-right: 120px;
+}
 .footer-nav a {
     color: var(--cl-main-background-light);
     text-decoration: none;
