@@ -509,6 +509,7 @@ img {
 
 .footer p {
     max-width: 264px;
+    color: var(--cl-main-background-light);
 }
 .footer .container a {
     margin-bottom: 16px;
@@ -521,7 +522,7 @@ img {
     align-items: center;
     width: 40px; 
     height: 40px; 
-    background-color: #4d5ae5; 
+    background-color: var(--cl-logo-second); 
     border-radius: 50%; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
