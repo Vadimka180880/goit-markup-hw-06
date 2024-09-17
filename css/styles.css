@@ -581,7 +581,7 @@ img {
     color: var(--white);
 }
 
-.footer.footer-content.footer-text p {
+.footer .footer-content .footer-text p {
     color: #FFFFFF;
 }
 
