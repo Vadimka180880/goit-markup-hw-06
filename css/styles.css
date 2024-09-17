@@ -356,7 +356,7 @@ img {
 .social-media .icon {
     width: 16px;
     height: 16px;
-     
+    fill: #ffffff; 
 }
 .social-media {
     display: flex;
@@ -501,7 +501,7 @@ img {
     text-decoration: underline;
 }
 
-.footer-text p {
+.footer-text {
     color: var(--cl-logo-cloud); 
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -521,43 +521,36 @@ img {
     display: inline-block;
     
 }
-
-/* #endregion footer */
-
-/* #region Footer */
-.social-media-icon {
-    fill: var(--cloud);
-    height: 16px;
-    width: 16px;
-}
-
-.page-footer .social-media-icons {
-    gap: 16px;
-}
-
-.page-footer .social-media-icon-link:hover,
-.page-footer .social-media-icon-link:focus {
-    background-color: var(--color-hover);
-}
-
-.social-media-icons {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
-
-.social-media-icon-link {
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cl-logo-second);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    transition: background-color var(--color-white);
+    width: 40px; 
+    height: 40px; 
+    background-color: var(--color-primary); 
+    border-radius: 50%; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.social-media-icon-link:hover,
-.social-media-icon-link:focus {
-    background-color: var(--cl-logo-ocean);
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--color-hover); 
 }
+
+.social-icon {
+    fill: var(--color-icon); 
+    width: 24px; 
+    height: 24px; 
+}
+.footer-text, .social-text {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+/* #endregion footer */
+
