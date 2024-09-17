@@ -606,5 +606,9 @@ img {
 .footer .social-media-icon-item:focus .social-media-icon {
     background-color: #31d0aa;
 }
+
+.social-media-icon {
+    fill:#f4f4fd;
+}
 /* #endregion footer */
 
