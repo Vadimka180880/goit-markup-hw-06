@@ -561,7 +561,7 @@ img {
 }
 
 .social-icon {
-    fill: var(--color-icon); 
+    fill: #F4F4FD; 
     width: 24px; 
     height: 24px; 
 }
