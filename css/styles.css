@@ -51,6 +51,7 @@ img {
     padding-left: 15px; 
     padding-right: 15px; 
     width: 1158px; 
+    display: flex;
 }
 .visually-hidden {
     position: absolute;
@@ -513,6 +514,7 @@ img {
 .footer .container a {
     margin-bottom: 16px;
     display: inline-block;
+    
 }
 /* #endregion footer */
 
