@@ -545,7 +545,8 @@ img {
 }
 .footer .container a {
     margin-bottom: 16px;
-    display: inline-block;        
+    display: inline-block; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);       
 }
 .team-desc.social-link {
     
@@ -560,8 +561,7 @@ img {
 .social-icon {
     fill: #F4F4FD; 
     width: 24px; 
-    height: 24px; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+    height: 24px;    
 }
 .footer-text, .social-text {
     color: var(--color-white);
