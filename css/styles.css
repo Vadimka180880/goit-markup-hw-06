@@ -14,6 +14,7 @@
     --color-white: #ffffff;
     --color-primary: #4d5ae5;
     --color-hover: #31d0aa;
+    --color-icon: #f4f4fd;
 } 
 
 /* #endregion Varibles */
@@ -537,7 +538,7 @@ img {
 }
 
 .social-icon {
-    fill: var(--color-white); 
+    fill: var(--color-icon); 
     width: 24px; 
     height: 24px; 
 }
