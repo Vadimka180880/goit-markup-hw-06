@@ -524,7 +524,7 @@ img {
     display: inline-block;
     
 }
-.social-link {
+.team-desc.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
