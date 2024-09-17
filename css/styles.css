@@ -272,6 +272,12 @@ img {
     letter-spacing: 0.02em; 
     line-height: 1.2;
 }
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    fill: currentColor; 
+}
+
 
 
 /* #endregion Effective Solutions */
