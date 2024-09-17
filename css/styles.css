@@ -551,7 +551,7 @@ img {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
-.social-media-list {
+.social-media-item {
     display: flex;
 }
 /* #endregion footer */
