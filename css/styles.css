@@ -11,6 +11,9 @@
     --cl-logo-cloud:#F4F4FD;
     --cl-logo-second:#4d5ae5;    
     --cl-logo-ocean:#404bbf;
+    --color-white: #ffffff;
+    --color-primary: #4d5ae5;
+    --color-hover: #31d0aa;
 } 
 
 /* #endregion Varibles */
@@ -523,20 +526,28 @@ img {
     align-items: center;
     width: 40px; 
     height: 40px; 
-    background-color: var(--cl-logo-second); 
+    background-color: var(--color-primary); 
     border-radius: 50%; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: #31d0aa; 
+    background-color: var(--color-hover); 
 }
 
 .social-icon {
-    fill: #f4f4fd; 
+    fill: var(--color-white); 
     width: 24px; 
     height: 24px; 
+}
+.footer-text, .social-text {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 /* #endregion footer */
 
