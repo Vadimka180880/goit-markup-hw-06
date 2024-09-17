@@ -522,7 +522,7 @@ img {
     
 }
 .social-link {
-    
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 40px; 
