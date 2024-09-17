@@ -536,7 +536,7 @@ img {
     
 }
 
-.social-link:hover,
+.social-icon .social-link:hover,
 .social-link:focus {
     background-color: var(--color-hover); 
 }
