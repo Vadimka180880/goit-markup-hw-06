@@ -581,8 +581,9 @@ img {
     color: var(--white);
 }
 
-.footer .social-media {
+.footer .social-media-icons {
     gap: 16px;
+    display: flex;
 }
 .footer .social-media-icon-link:hover,
 .page-footer .social-media-icon-link:focus {
