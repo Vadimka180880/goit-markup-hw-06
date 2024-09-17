@@ -578,12 +578,9 @@ img {
     display: block;
     font-weight: 500;
     margin-bottom: 16px;
-    color: var(--white);
-}
-
-.footer .footer-content .footer-text p {
     color: #FFFFFF;
 }
+
 
 .footer .social-media-icons {
     gap: 16px;
