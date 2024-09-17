@@ -510,6 +510,7 @@ img {
 .footer p {
     max-width: 264px;
     color: var(--cl-main-background-light);
+    background-color: var(--cl-logo-second); 
 }
 .footer .container a {
     margin-bottom: 16px;
