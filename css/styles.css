@@ -585,6 +585,10 @@ img {
     gap: 16px;
     display: flex;
 }
+.footer .social-media-icon-item {
+    width: 40px;
+    height: 40px;
+}
 .footer .social-media-icon-link:hover,
 .page-footer .social-media-icon-link:focus {
     background-color: var(--color-hover);
