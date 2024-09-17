@@ -543,13 +543,23 @@ img {
     width: 24px;
     height: 24px;
 }
-.footer-text, .social-text {
+.social-text {
     color: var(--color-white);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    
+}
+.footer-text {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    
 }
 .social-media-item {
     align-items: center;
