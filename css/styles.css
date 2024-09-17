@@ -541,9 +541,9 @@ img {
 }
 
 .social-icon {
-    fill: var(--color-icon); 
-    width: 24px; 
-    height: 24px; 
+    fill: var(--color-icon);
+    width: 24px;
+    height: 24px;
 }
 .footer-text, .social-text {
     color: var(--color-white);
