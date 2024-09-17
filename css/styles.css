@@ -526,10 +526,8 @@ img {
 .social-link:hover .social-icon {
     fill: #f4f4fd;
 }
-.footer p {
+.footer .footer-text {
     max-width: 264px;
-    color: var(--cl-main-background-light);
-    background-color: var(--cl-logo-second); 
 }
 .footer .container a {
     margin-bottom: 16px;
