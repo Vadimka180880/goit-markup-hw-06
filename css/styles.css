@@ -505,7 +505,6 @@ img {
     color: var(--cl-logo-cloud); 
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
 }
 
 .footer a.footer-logo span {
@@ -551,6 +550,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+}
+.footer-social-media {
     display: flex;
 }
 /* #endregion footer */
