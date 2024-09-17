@@ -591,6 +591,7 @@ img {
     font-weight: 500;
     margin-bottom: 16px;
     color: #FFFFFF;
+    display: flex;
 }
 
 
