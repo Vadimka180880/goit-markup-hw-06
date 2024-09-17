@@ -514,6 +514,9 @@ img {
     color: #f4f4fd;
 }
 
+.social-link:hover .social-icon {
+    fill: #f4f4fd;
+}
 .footer p {
     max-width: 264px;
     color: var(--cl-main-background-light);
@@ -536,7 +539,7 @@ img {
     
 }
 
-.social-icon .social-link:hover,
+.social-link:hover,
 .social-link:focus {
     background-color: var(--color-hover); 
 }
