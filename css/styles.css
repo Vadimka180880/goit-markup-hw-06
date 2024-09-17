@@ -3,6 +3,9 @@
     /* Fonts */
     --main-font: Roboto, sans-serif;
     --second-font: Raleway, sans-serif;
+
+    --transition-slow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --outer-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     
     /* Color */
     --cl-main-dark: #434455;
@@ -143,7 +146,7 @@ img {
     border-radius: 2px; 
 }
 .page-nav li:first-child .nav-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-slow);
 }
 
 .page-nav li:first-child .nav-link:hover,
@@ -304,7 +307,7 @@ img {
     border-radius: 0px 0px 4px 4px;
     width: 264px;
     text-align: center;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: var(--outer-shadow);
 }
 
 .team-desc {
@@ -410,6 +413,11 @@ img {
     column-gap: 24px;
     gap: 24px;
     row-gap: 48px;
+}
+
+.portfolio-list .item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow var(--transition-slow);
 }
 .portfolio-list .portfolio-item {
     background-color: var(--cl-main-background-light);
