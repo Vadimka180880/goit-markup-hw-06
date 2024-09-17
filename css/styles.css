@@ -602,8 +602,8 @@ img {
     width: 40px;
     height: 40px;  
 }
-.footer .social-media-icon-item:hover .social-media-icon,
-.footer .social-media-icon-item:focus .social-media-icon {
+.footer-social-media .social-media-icon-item:hover .social-media-icon,
+.footer-social-media .social-media-icon-item:focus .social-media-icon {
     background-color: #31d0aa;
 }
 
