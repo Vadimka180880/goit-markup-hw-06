@@ -539,7 +539,7 @@ img {
 }
 
 .social-icon {
-    fill: var(--color-icon);
+    fill: #f4f4fd;
     width: 24px;
     height: 24px;
 }
