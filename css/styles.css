@@ -542,11 +542,7 @@ img {
 .social-link:focus .social-link {
     fill: #f4f4fd; 
 }
-.social-icon {
-    
-    width: 24px;
-    height: 24px;
-}
+
 .social-text {
     color: var(--color-white);
     font-weight: 500;
