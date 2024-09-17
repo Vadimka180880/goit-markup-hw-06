@@ -535,12 +535,12 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--color-hover);
+    background-color: #31d0aa;
     
 }
 .social-link:hover,
 .social-link:focus .social-link {
-    fill: var(--color-icon); 
+    fill: #f4f4fd; 
 }
 .social-icon {
     
