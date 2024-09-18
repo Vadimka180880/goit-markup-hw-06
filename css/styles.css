@@ -216,23 +216,23 @@ img {
     margin-top: 48px;
 }
 .btn-hero {
+    display: inline-block;
     font-family: "Roboto", sans-serif;
-    background-color: var(--cl-logo-second); 
+    background-color: var(--cl-logo-second); /* Фоновий колір */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--cl-main-background-light);
+    color: var(--cl-main-background-light); /* Колір тексту */
     cursor: pointer;
     border-radius: 4px;
-    display: block;
+    text-align: center;
     min-width: 169px;
     height: 56px;
+    padding: 16px 32px; /* Встановлюємо відступи для кращого вигляду */
     border: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна фону */
+    text-decoration: none; /* Видаляємо підкреслення посилання */
 }
 .btn-hero:hover, .btn-hero:focus {
     background-color: var(--cl-logo-ocean); 
