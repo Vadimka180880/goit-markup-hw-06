@@ -197,11 +197,11 @@ img {
 }
 
 .hero-title {
+    color: var(--color-white); 
+    font-size: 36px; 
+    line-height: 1.1; 
+    max-width: 500px; 
     text-align: center;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    margin-bottom: 72px;
 }
 
 .hero-section .section-title {
