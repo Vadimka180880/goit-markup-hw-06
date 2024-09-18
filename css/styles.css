@@ -224,11 +224,11 @@ img {
 }
 
 .hero-section img {
-    max-width: 100%; /* Зробіть картинку адаптивною */
-    height: auto; /* Підтримуйте пропорції зображення */
+    max-width: 100%; 
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Центрування зображення */
-    position: relative; /* Додайте, якщо зображення зсувається */
+    margin: 0 auto; 
+    position: relative; 
 }
 
 .btn-hero {
@@ -322,9 +322,7 @@ img {
 /* #endregion Effective Solutions */
 
 /* #region Our Team */
-.portfolio {
-    background-color: #F4F4FD;
-}
+
 
 .section-title {
     margin-bottom: 72px;
