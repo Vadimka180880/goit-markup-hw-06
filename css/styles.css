@@ -194,6 +194,7 @@ img {
     background-color: var(--cl-navy-blue); 
     background-size: cover;
     text-align: center;
+    display: flex;
 }
 
 .hero-title {
@@ -202,6 +203,8 @@ img {
     line-height: 1.1; 
     max-width: 500px; 
     text-align: center;
+    margin: 0 auto;
+    display: flex;
 }
 
 
@@ -212,14 +215,21 @@ img {
     line-height: 1.07;
     text-transform: none;
     max-width: 496px;
+    display: flex;
 }
 .hero-section .btn-hero {
     margin-top: 48px;
 }
+
+.hero-section img {
+    display: block;
+    margin: 0 auto;
+}
+
 .btn-hero {
     display: inline-block;
     font-family: "Roboto", sans-serif;
-    background-color: var(--cl-logo-second); /* Фоновий колір */
+    background-color: var(--cl-logo-second); 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
