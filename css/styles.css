@@ -105,10 +105,10 @@ img {
     color: #4d5ae5;
     margin-right: 76px;
 }
-
 .header-logo .logo-text {
     color: var(--cl-navy-blue);
 }
+
 .page-nav,
 .contacts-list {
     display: flex;
