@@ -194,7 +194,8 @@ img {
     background-color: var(--cl-navy-blue); 
     background-size: cover;
     text-align: center;
-    display: flex;
+    display: flex;    
+    position: relative;
 }
 
 .hero-title {
@@ -204,7 +205,8 @@ img {
     max-width: 500px; 
     text-align: center;
     margin: 0 auto;
-    display: flex;
+    display: flex;    
+    position: relative;
 }
 
 
