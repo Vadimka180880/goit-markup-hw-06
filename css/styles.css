@@ -197,6 +197,14 @@ img {
     margin-bottom: 72px;
 }
 
+.hero-section .section-title {
+    color: var(--color-white);
+    margin: 0 auto;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    max-width: 496px;
+}
 .btn-hero {
     font-family: "Roboto", sans-serif;
     background-color: var(--cl-logo-second); 
