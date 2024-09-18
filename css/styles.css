@@ -322,7 +322,9 @@ img {
 /* #endregion Effective Solutions */
 
 /* #region Our Team */
-
+.portfolio {
+    background-color: #F4F4FD;
+}
 
 .section-title {
     margin-bottom: 72px;
@@ -441,8 +443,7 @@ img {
 
 
 /* #region Our Portfolio */
-.portfolio, .portfolio-section {
-    background-color: var(--cl-logo-cloud);  
+.portfolio, .portfolio-section {      
     letter-spacing: 0.02em;
     padding-top: 120px; 
     padding-bottom: 120px; 
