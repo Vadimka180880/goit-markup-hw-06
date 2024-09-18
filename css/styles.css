@@ -420,18 +420,13 @@ img {
 
 
 /* #region Our Portfolio */
-.portfolio-section {
-    background-color: var(--cl-main-background-light);  
-    letter-spacing: 0.02em;
-    padding-top: 120px; 
-    padding-bottom: 120px; 
-}
-.portfolio {
+.portfolio, .portfolio-section {
     background-color: var(--cl-logo-cloud);  
     letter-spacing: 0.02em;
     padding-top: 120px; 
     padding-bottom: 120px; 
 }
+
 
 .portfolio-list {
     display: flex;
