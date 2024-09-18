@@ -224,8 +224,11 @@ img {
 }
 
 .hero-section img {
+    max-width: 100%; /* Зробіть картинку адаптивною */
+    height: auto; /* Підтримуйте пропорції зображення */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Центрування зображення */
+    position: relative; /* Додайте, якщо зображення зсувається */
 }
 
 .btn-hero {
