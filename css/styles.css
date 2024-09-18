@@ -205,6 +205,9 @@ img {
     text-transform: none;
     max-width: 496px;
 }
+.hero-section .btn-hero {
+    margin-top: 48px;
+}
 .btn-hero {
     font-family: "Roboto", sans-serif;
     background-color: var(--cl-logo-second); 
