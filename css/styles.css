@@ -231,20 +231,32 @@ img {
     position: relative; 
 }
 
-.btn-hero {
-    display: inline-block;
-    background-color: var(--color-primary); /* Голубий фон */
-    color: var(--color-white); /* Білий текст */
+.btn {
+    display: block;
+    min-width: 169px;
+    min-height: 56px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding: 16px 32px;
     border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none; /* Без підкреслення */
+    margin: 0 auto;
 }
-.btn-hero:hover, .btn-hero:focus {
-    background-color: var(--color-hover); /* Колір при hover */
+
+.btn.primary {    
+    color: var(--cl-logo-second);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.btn.primary:hover,
+.btn.primary:focus {
+    background-color: var(--cl-logo-ocean);
+}
+
+.btn.primary {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion Main */
 
