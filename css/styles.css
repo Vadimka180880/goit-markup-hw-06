@@ -106,7 +106,7 @@ img {
     margin-right: 76px;
 }
 
-.logo-text {
+.header-logo .logo-text {
     color: var(--cl-navy-blue);
 }
 .page-nav,
@@ -203,6 +203,7 @@ img {
     max-width: 500px; 
     text-align: center;
 }
+
 
 .hero-section .section-title {
     color: var(--cl-main-background-light);
