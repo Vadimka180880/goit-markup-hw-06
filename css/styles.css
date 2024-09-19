@@ -414,11 +414,11 @@ img {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--iris);
-    color: var(--cloud);
+    background-color: var(--cl-logo-second);
+    color: var(--color-icon);
     padding: 40px 32px;
     transform: translateY(100%);
-    transition: transform var(--transition-slow);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-image-container:hover .overlay {
