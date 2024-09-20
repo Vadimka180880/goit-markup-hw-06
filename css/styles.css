@@ -235,9 +235,6 @@ img {
     max-width: 496px;
     display: flex;
 }
-.hero-section .btn-hero {
-    margin-top: 48px;
-}
 
 .btn {
     background-color: #4d5ae5;
@@ -250,7 +247,8 @@ img {
     letter-spacing: 0.04em;
     padding: 16px 32px;
     border-radius: 4px;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    margin-top: 48px;  
 }
 
 .btn.primary {    
