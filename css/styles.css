@@ -136,6 +136,7 @@ img {
     height: 4px; 
     background-color: #404bbf; 
     border-radius: 2px; 
+    bottom: -1px;
 }
 
 .nav-link,
@@ -226,7 +227,7 @@ img {
 
 
 .hero-section .section-title {
-    color: var(--cl-main-background-light);
+    color: #FFFFFF;
     margin: 0 auto;
     font-size: 56px;
     line-height: 1.07;
