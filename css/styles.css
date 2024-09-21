@@ -719,6 +719,16 @@ img {
 background-color: #404bbf;
 border: none; 
 }
+.modal-caption {
+width: 360px;
+height: 336px;
+top: 192px;
+left: 540px;
+gap: 8px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+
+}
 
 /* #end Region Modal */
 
