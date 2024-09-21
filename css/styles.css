@@ -104,6 +104,7 @@ img {
     color: #404bbf; 
     display: block;
     position: relative; 
+    font-weight: 500;
 }
 
 .page-nav .active-nav-link::after {
@@ -124,7 +125,8 @@ img {
     padding: 24px 0;
     color: #2e2f42; 
     display: block;
-    text-decoration: none;     
+    text-decoration: none;  
+    font-weight: 500;   
 }
 .active-nav-link:hover,
 .active-nav-link:focus,
