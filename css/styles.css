@@ -748,6 +748,23 @@ img {
     margin-bottom: 4px;
 }
 
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form-input {
+    width: 100%;
+    padding-right: 30px; 
+}
+.input-icon {
+    position: absolute;
+    right: 10px; 
+    fill: #ccc;
+}
+.form-input:focus + .input-icon {
+    fill: #4d5ae5; 
+}
 /* #end Region Modal */
 
 
