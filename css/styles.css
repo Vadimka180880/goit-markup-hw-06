@@ -790,7 +790,7 @@ img {
     fill: #4D5AE5;
 }
 
-.textarea-input {
+/* .textarea-input { 
     width: 100%;
     height: 120px;
     font-size: 12px;
@@ -808,8 +808,7 @@ img {
 
 .textarea-input:focus {
     border-color: #4D5AE5;
-}
-
+}*/
 
 
 /* #end Region Modal */
