@@ -739,6 +739,9 @@ img {
     border-radius: 4px 0 0 0;
     margin-bottom: 16px;
 }
+.form-label {
+    margin-bottom: 8px; 
+}
 
 /* #end Region Modal */
 
