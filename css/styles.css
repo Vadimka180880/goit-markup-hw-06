@@ -793,11 +793,11 @@ img {
 .textarea-input:focus {
     border-color: #4D5AE5;
 }
-.modal .modal-btn:hover {
+.modal .modal-btn:hover,
+.modal .modal-btn:focus {
     background-color: #404bbf;
     border: none;
 }
-
 /* #end Region Modal */
 
 
