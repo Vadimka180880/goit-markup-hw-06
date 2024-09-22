@@ -798,6 +798,9 @@ img {
     background-color: #404bbf;
     border: none;
 }
+.form-input:focus {
+    border-color: #4D5AE5 !important;
+}
 
 
 /* #end Region Modal */
