@@ -786,7 +786,8 @@ img {
 }
 
 .form-input:focus + .input-icon {
-    fill: #4D5AE5;
+    /*fill: #4D5AE5;*/
+    border-color: #4D5AE5;
 }
 
 .modal .modal-btn:hover,
