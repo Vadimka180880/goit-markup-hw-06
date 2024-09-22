@@ -722,7 +722,7 @@ img {
 
 .modal-btn-icon-close {
     stroke: currentColor;
-}
+} 
 
 .modal-btn:hover svg,
 .modal-btn:focus svg {
