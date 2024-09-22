@@ -734,6 +734,9 @@ text-align: center;
 position: absolute;
 color:#2E2F42;
 }
+.modal-btn-icon-close {
+    stroke: red;
+}
 
 /* #end Region Modal */
 
