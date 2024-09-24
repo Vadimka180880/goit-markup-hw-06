@@ -830,6 +830,71 @@ img {
     border-color: #4D5AE5;
 }
 
+/* Загальний контейнер для чекбоксу */
+.checkbox-container {
+    margin-bottom: 24px; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--label-color, #8e8f99); 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    margin-right: 8px; 
+}
+
+.checkbox-icon {
+    width: 10px;
+    height: 8px;
+    fill: transparent;
+}
+
+#user-privacy:checked + .checkbox-label .checkbox-box {
+    background-color: var(--checked-bg-color, #404bbf); 
+    border: none;
+}
+
+#user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
+    fill: var(--checked-icon-color, #F4F4FD); 
+}
+
+.privacy-link {
+    color: var(--link-color, #4d5ae5);
+    text-decoration: none;
+}
+
+.privacy-link:hover,
+.privacy-link:focus {
+    text-decoration: underline;
+}
+
+
 
 /* #end Region Modal */
 
