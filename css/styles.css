@@ -25,8 +25,7 @@ a {
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #2e2f42;
-    font-family: 'Raleway', sans-serif;
+    color: #2e2f42;    
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -39,7 +38,7 @@ img {
     height: auto;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
