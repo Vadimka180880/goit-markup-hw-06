@@ -837,6 +837,7 @@ img {
 .checkbox-container {
     margin-bottom: 24px; 
 }
+
 #user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
     fill: var(--icon-fill-color); 
 }
@@ -850,6 +851,7 @@ img {
     padding: 0;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+    fill:#F4F4FD;
 }
 
 .checkbox-label {
