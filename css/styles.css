@@ -874,7 +874,7 @@ img {
 .checkbox-icon {
     width: 10px;
     height: 8px;
-    fill: transparent;
+    fill: red;
 }
 
 #user-privacy:checked + .checkbox-label .checkbox-box {
@@ -895,7 +895,6 @@ img {
 .privacy-link:focus {
     text-decoration: underline;
 }
-
 
 
 /* #end Region Modal */
