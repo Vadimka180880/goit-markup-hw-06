@@ -835,6 +835,10 @@ img {
     margin-bottom: 24px; 
 }
 
+.checkbox-container .checkbox-box {
+    display: inline-flex;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
