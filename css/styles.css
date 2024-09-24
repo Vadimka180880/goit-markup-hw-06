@@ -839,6 +839,10 @@ img {
     display: inline-flex;
 }
 
+#user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
+    fill: #F4F4FD; 
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
