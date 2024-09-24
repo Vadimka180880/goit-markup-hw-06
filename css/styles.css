@@ -837,11 +837,6 @@ img {
 .checkbox-container {
     margin-bottom: 24px; 
 }
-
-.checkbox-container .checkbox-box {
-    display: inline-flex;
-}
-
 #user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
     fill: var(--icon-fill-color); 
 }
@@ -861,7 +856,8 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--label-color, #8e8f99);     
+    color: var(--label-color, #8e8f99); 
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
 }
