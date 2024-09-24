@@ -838,10 +838,6 @@ img {
     margin-bottom: 24px; 
 }
 
-#user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
-    fill: var(--icon-fill-color); 
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -851,7 +847,7 @@ img {
     padding: 0;
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
-    fill:#F4F4FD;
+    fill: #F4F4FD;
 }
 
 .checkbox-label {
