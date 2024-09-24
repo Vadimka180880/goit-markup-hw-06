@@ -1,4 +1,7 @@
 /* #region Varibles */
+:root {
+    --icon-fill-color: #F4F4FD; 
+}
 
 /* #endregion Varibles */
 
@@ -840,7 +843,7 @@ img {
 }
 
 #user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
-    fill: #F4F4FD; 
+    fill: var(--icon-fill-color); 
 }
 
 .visually-hidden {
