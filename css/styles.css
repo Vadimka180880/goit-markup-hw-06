@@ -802,19 +802,6 @@ img {
     border-color: #4D5AE5;    
 }
 
-
-/* Стиль для input при фокусі */
-.form-input:focus {
-    border-color: #4D5AE5; /* Зміна кольору рамки при фокусі */
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід */
-}
-
-/* Стиль для svg іконки при фокусі на input */
-.form-input:focus + .input-icon {
-    fill: #4D5AE5; /* Зміна кольору іконки */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід */
-}
-
 .modal .modal-btn:hover,
 .modal .modal-btn:focus {
     background-color: #404bbf;
@@ -836,9 +823,10 @@ img {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-input:focus,
 .textarea-input:focus {
     border-color: #4D5AE5;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Загальний контейнер для чекбоксу */
