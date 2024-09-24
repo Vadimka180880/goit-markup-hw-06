@@ -874,7 +874,7 @@ img {
 .checkbox-icon {
     width: 10px;
     height: 8px;
-    fill: #F4F4FD;
+    fill: var(--icon-fill-color);
 }
 
 #user-privacy:checked + .checkbox-label .checkbox-box {
