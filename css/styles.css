@@ -795,7 +795,8 @@ img {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: #4d5ae5;    
+    fill: #4d5ae5;
+    border-color: #4D5AE5;    
 }
 
 /*.form-input:focus + .input-icon {
