@@ -195,7 +195,8 @@ img {
     background-color: #2e2f42; 
     background-size: cover;
     text-align: center;
-    display: flex;    
+    display: flex;
+    margin: 0 auto;    
 }
 
 .hero-title {
