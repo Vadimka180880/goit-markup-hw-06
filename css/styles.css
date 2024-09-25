@@ -693,7 +693,8 @@ img {
 }
 
 .social-subscribe svg {
-    margin-left: 16px;
+    width: 24px;
+    height: 24px;
     fill: #ffffff;
 }
 
@@ -749,7 +750,7 @@ img {
 }
 
 .btn-subscribe .social-subscribe {
-    margin-left: 8px; 
+    margin-left: 16px; 
     fill: #ffffff;
 }
 
