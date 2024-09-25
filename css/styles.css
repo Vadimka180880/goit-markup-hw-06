@@ -683,7 +683,7 @@ img {
 /* footer subscribe */
 /* Контейнер для підписки */
 .container-footer-subscribe {
-    /* Якщо потрібно стилізувати сам контейнер */
+    float: right;
 }
 
 
