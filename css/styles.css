@@ -690,6 +690,10 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff; 
 }
+.subscribe-form {
+    gap: 24px;
+    display: flex; 
+}
 /* end footer subscribe */
 /* #endregion footer */
 /* #Region Modal */
