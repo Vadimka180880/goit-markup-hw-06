@@ -686,12 +686,7 @@ img {
     /* Якщо потрібно стилізувати сам контейнер */
 }
 
-/* Стилі для div, що містить форму підписки */
-.footer-subscribe {
-    /* Додаткові стилі, якщо потрібні */
-}
 
-/* Стилі для параграфа "Subscribe" */
 .subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
@@ -701,19 +696,12 @@ img {
     color: #ffffff;
 }
 
-/* Стилі для форми */
 .subscribe-form {
     display: flex;
-    gap: 24px; /* Відступи між елементами форми */
+    gap: 24px; 
     align-items: center;
 }
 
-/* Стилі для лейбла */
-.form-label {
-    /* За потреби додайте додаткові стилі для лейбла */
-}
-
-/* Стилі для інпуту */
 .input-email {
     width: 264px;
     height: 40px;
@@ -728,7 +716,6 @@ img {
     color: #ffffff;
 }
 
-/* Стилі для тексту placeholder */
 .input-email::placeholder {
     color: #ffffff;
 }
@@ -750,13 +737,12 @@ img {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Стилі для SVG іконки всередині кнопки */
+
 .btn-subscribe .social-subscribe {
-    margin-left: 8px; /* Відступ між текстом та іконкою */
+    margin-left: 8px; 
     fill: #ffffff;
 }
 
-/* Ховер ефект для кнопки */
 .btn-subscribe:hover {
     background-color: #404bbf;
 }
