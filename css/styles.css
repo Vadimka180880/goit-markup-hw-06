@@ -692,6 +692,10 @@ img {
     align-items: center;    
 }
 
+.social-subscribe {
+    margin-left: 16px;
+}
+
 .subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
