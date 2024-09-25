@@ -681,19 +681,57 @@ img {
     
 }
 /* footer subscribe */
+/* Контейнер для підписки */
 .container-footer-subscribe {
+    /* Якщо потрібно стилізувати сам контейнер */
 }
+
+/* Стилі для div, що містить форму підписки */
 .footer-subscribe {
-    font-weight: 500; 
-    font-size: 16px; 
+    /* Додаткові стилі, якщо потрібні */
+}
+
+/* Стилі для параграфа "Subscribe" */
+.subscribe-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff; 
+    color: #ffffff;
 }
+
+/* Стилі для форми */
 .subscribe-form {
-    gap: 24px;
-    display: flex; 
+    display: flex;
+    gap: 24px; /* Відступи між елементами форми */
 }
+
+/* Стилі для лейбла */
+.form-label {
+    /* За потреби додайте додаткові стилі для лейбла */
+}
+
+/* Стилі для інпуту */
+.input-email {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/* Стилі для тексту placeholder */
+.input-email::placeholder {
+    color: #ffffff;
+}
+
 /* end footer subscribe */
 /* #endregion footer */
 /* #Region Modal */
