@@ -850,8 +850,7 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--label-color, #8e8f99); 
-    
+    color: var(--label-color, #8e8f99);     
     align-items: center;
     cursor: pointer;
 }
@@ -872,11 +871,12 @@ img {
 .checkbox-icon {
     width: 10px;
     height: 8px;
-    fill: var(--icon-fill-color);
+    
 }
 
 #user-privacy:checked + .checkbox-label .checkbox-box {
     background-color: var(--checked-bg-color, #404bbf); 
+    fill: var(--icon-fill-color);
     border: none;
 }
 
