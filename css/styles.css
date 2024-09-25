@@ -127,7 +127,7 @@ img {
     color: #2e2f42; 
     display: block;
     text-decoration: none;  
-    font-weight: 500;   
+    font-weight: 400;      
 }
 .active-nav-link:hover,
 .active-nav-link:focus,
@@ -203,7 +203,7 @@ img {
     color: #FFFFFF; 
     font-size: 56px; 
     line-height: 1.07; 
-    max-width: 600px; 
+    max-width: 496px; 
     text-align: center;
     margin: 0 auto;            
 }
