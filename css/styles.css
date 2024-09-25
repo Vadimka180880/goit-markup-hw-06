@@ -120,7 +120,15 @@ img {
     bottom: -1px;
 }
 
-.nav-link,
+.nav-link {
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    color: #2e2f42; 
+    display: block;
+    text-decoration: none;  
+    font-weight: 500;      
+}
+
 .cont-link {
     letter-spacing: 0.02em;
     padding: 24px 0;
@@ -205,7 +213,8 @@ img {
     line-height: 1.07; 
     max-width: 496px; 
     text-align: center;
-    margin: 0 auto;            
+    margin: 0 auto; 
+    margin-bottom: 48px;           
 }
 
 
@@ -230,8 +239,7 @@ img {
     letter-spacing: 0.04em;
     padding: 16px 32px;
     border-radius: 4px;
-    margin: 0 auto;  
-    margin-top: 48px;  
+    margin: 0 auto;       
 }
 
 .btn.primary {    
@@ -634,8 +642,7 @@ img {
 }
 
 .footer-text, .social-text {
-    color: #ffffff;
-    font-weight: 500;
+    color: #ffffff;    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;    
@@ -758,6 +765,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    
     background-color: rgba(46, 47, 66, 0.4);
     height: 100%;
     width: 100%;
@@ -778,22 +786,6 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal-btn:hover,
 .modal-btn:focus {
@@ -801,20 +793,15 @@ img {
     border: none;
 }
 
-.modal-btn-icon-close {
-    stroke: currentColor;
-} 
 
 .modal-btn:hover svg,
 .modal-btn:focus svg {
-    fill: #ffffff;
+    fill: #ce0f0f;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-caption {
     width: 100%;
-    padding: 20px;
-    margin-top: 20px;
     font-weight: 500;
     text-align: center;
     color: #2E2F42;
@@ -871,8 +858,11 @@ img {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: #4d5ae5;
+    fill: #2E2F42;
     border-color: #4D5AE5;    
+}
+.input-container:hover .input-icon {
+    fill: #4d5ae5;
 }
 
 .modal .modal-btn:hover,
@@ -891,6 +881,7 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
+    display: block;
     padding: 8px 16px;
     outline: transparent;
     resize: none;
