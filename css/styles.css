@@ -681,11 +681,17 @@ img {
     
 }
 /* footer subscribe */
-/* Контейнер для підписки */
 .container-footer-subscribe {
-    float: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 0; 
 }
 
+.footer-subscribe {
+    display: flex;
+    align-items: center;
+}
 
 .subscribe-text {
     margin-bottom: 16px;
