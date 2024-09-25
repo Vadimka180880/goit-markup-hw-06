@@ -692,7 +692,7 @@ img {
     align-items: center;    
 }
 
-.social-subscribe {
+.social-subscribe svg {
     margin-left: 16px;
     fill: #ffffff;
 }
