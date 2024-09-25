@@ -680,6 +680,17 @@ img {
     fill:#f4f4fd;
     
 }
+/* footer subscribe */
+.container-footer-subscribe {
+}
+.footer-subscribe {
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff; 
+}
+/* end footer subscribe */
 /* #endregion footer */
 /* #Region Modal */
 .backdrop {
