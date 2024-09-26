@@ -451,15 +451,14 @@ img {
 }
 
 .social-link .social-icon {
-    fill: #f4f4fd; /* Початковий колір іконки */
+    fill: #f4f4fd; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-    fill: #ffffff; /* Колір іконки при hover/focus */
+.social-link .social-icon:hover svg,
+.social-link .social-icon:focus svg {
+    fill: #F4F4FD; 
 }
-
 .social-media {
     display: flex;
     justify-content: center;
@@ -471,7 +470,7 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-    background-color: #404bbf; /* Фон при hover/focus */
+    background-color: #404bbf; 
 }
 
 
@@ -632,17 +631,18 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);       
 }
 .team-desc.social-link {
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     justify-content: center;
     align-items: center;
     width: 40px; 
     height: 40px; 
-    background-color: #4d5ae5; 
+    color: #f4f4fd;
+    background: #4d5ae5; 
     border-radius: 50%; 
 }
 
 .social-icon {
-    fill: #F4F4FD;            
+    fill: currentColor;            
 }
 
 .social-link:hover .social-icon,
@@ -775,7 +775,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    
+    display: none;
     background-color: rgba(46, 47, 66, 0.4);
     height: 100%;
     width: 100%;
