@@ -895,8 +895,9 @@ img {
     fill: #2E2F42;
     border-color: #4D5AE5;    
 }
-.input-container:hover .input-icon {
-    fill: #4d5ae5;
+.input-container:hover .input-icon,
+.input-container:focus-within .input-icon {
+    fill: #4D5AE5; 
 }
 
 .modal .modal-btn:hover,
