@@ -803,7 +803,7 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-icon-close {
-    fill: #0fe719; 
+    fill: #000000; 
 }
 .modal-btn:hover,
 .modal-btn:focus {
