@@ -1,6 +1,8 @@
 /* #region Varibles */
 :root {
     --icon-fill-color: #F4F4FD; 
+    --items: 4;
+    --indent-col: 32px;
 }
 
 /* #endregion Varibles */
@@ -41,11 +43,35 @@ img {
     height: auto;
 }
 .container {
-    max-width: 1158px;
+    max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
-
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 24px;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 24px;
+    }
+}
+.section {
+    padding: 40PX 0;
+}
+@media only screen and (min-width: 768px) {  
+    .section {
+    padding: 50PX 0;
+}
+}
+@media only screen and (min-width: 1158px) {  
+    .section {
+        padding: 60px;
+    }
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -61,51 +87,126 @@ img {
 }
 
 /* #endregion */
-/* #region header */
+/*region header */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container {
-    width: 1158px;
+    width: 100%;
+    height: 56px;
     margin: 0 auto;
     padding: 0 15px;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-header .container {
+        width: 768px;
+        height: 72px;
+    }
+}
+
+@media only screen and (min-width: 1156px) {
+    .page-header .container {
+        width: 1158px;
+        height: 72px;
+    }
 }
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 21px;
+    text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
-}
-.page-header .logo-text {
-    color: #2e2f42;
+    margin-right: 16px;
+    padding: 0;
+    align-self: center;
 }
 
-.page-nav, .active-nav-link,
-.contacts-list {
-    display: flex;
-    gap: 40px;
-    
+@media only screen and (min-width: 768px) {
+    .header-logo {
+        margin-right: 76px; 
+    }
 }
+
+.contacts-list {
+    list-style-type: none; /* Прибираємо маркери списку */
+    padding: 0; /* Прибираємо зайві відступи */
+    margin: 0; /* Прибираємо зовнішні відступи */
+}
+
+
+/* Стилі для планшетів (768px - 1155px) */
+@media only screen and (min-width: 768px) and (max-width: 1155px) {
+    .contacts-list {
+        flex-direction: column; /* В стовпчик */
+        align-items: flex-end;  /* Вирівнювання по правому краю */
+        gap: 5px;               /* Відстань між контактами */
+    }
+}
+
+@media only screen and (min-width: 1156px) {
+    .contacts-list {
+        flex-direction: row;    /* В рядок */
+        align-items: center;    /* Вирівнювання по центру */
+        gap: 20px;              /* Відстань між контактами */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Вирівнювання по лівому краю */
+        gap: 5px; /* Менший відступ між контактами */
+    }
+}
+@media only screen and (max-width: 767px) {
+    .page-nav, .contacts-list {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .page-nav, .contacts-list {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.cont-link {
+    margin: 0; /* Прибираємо всі зовнішні відступи */
+    padding: 0; /* Прибираємо всі внутрішні відступи */
+    font-size: 16px; /* Залишаємо відповідний розмір шрифту */
+    color: #2e2f42; /* Основний колір шрифту */
+    text-decoration: none; /* Забираємо підкреслення */
+    text-align: right; /* Для вирівнювання тексту */
+}
+
+
 .page-nav .nav-link, .page-nav .active-nav-link,
 .contacts-list .cont-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.page-nav .active-nav-link {
     letter-spacing: 0.02em;
     padding: 24px 0;
-    color: #404bbf; 
-    display: block;
-    position: relative; 
+    text-decoration: none;
     font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2e2f42;
+    font-style: normal;
+}
+
+.page-nav .active-nav-link {
+    color: #404bbf;
+    font-weight: 500;
+    position: relative;
 }
 
 .page-nav .active-nav-link::after {
@@ -120,77 +221,21 @@ img {
     bottom: -1px;
 }
 
-.nav-link {
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    color: #2e2f42; 
-    display: block;
-    text-decoration: none;  
-    font-weight: 500;      
+.nav-link:hover, .nav-link:focus,
+.active-nav-link:hover, .active-nav-link:focus,
+.cont-link:hover, .cont-link:focus {
+    color: #404bbf;
 }
 
-.cont-link {
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    color: #2e2f42; 
-    display: block;
-    text-decoration: none;  
-    font-weight: 400;      
-}
-.active-nav-link:hover,
-.active-nav-link:focus,
-.nav-link:hover,
-.nav-link:focus,
-.cont-link:hover,
-.cont-link:focus {
-    color: #404bbf; 
-}
 .header-nav {
     display: flex;
     align-items: center; 
 }
+
 .contacts {
-    font-style: normal;
     margin-left: auto;
 }
-.page-nav li:first-child .nav-link {
-    color: #404bbf;
-}
-.nav-link::after {
-    content: ''; 
-    width: 100%;      
-    left: 0; 
-    bottom: -1px; 
-    height: 4px; 
-    background-color: #404bbf;
-    border-radius: 2px; 
-}
-.page-nav li:first-child .nav-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-nav li:first-child .nav-link:hover,
-.page-nav li:first-child .nav-link:focus {
-    color: #4d5ae5; 
-}
-.contacts-list li:first-child .cont-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list li:first-child .cont-link:hover,
-.contacts-list li:first-child .cont-link:focus {
-    color: #404bbf;
-}
-.contacts-list li:nth-child(2) .cont-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list li:nth-child(2) .cont-link:hover,
-.contacts-list li:nth-child(2) .cont-link:focus {
-    color: #404bbf; 
-}
-/* #endregion header */
-
+/*end region header */
 
 /* #region Main */
 /* Hero Section Styles */
@@ -209,14 +254,35 @@ img {
 
 .hero-title {
     color: #FFFFFF; 
-    font-size: 56px; 
+    font-size: 40px; 
     line-height: 1.07; 
-    max-width: 496px; 
+    max-width: 160px; 
     text-align: center;
     margin: 0 auto; 
     margin-bottom: 48px;           
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-title {    
+    font-size: 56px; 
+    line-height: 1.07; 
+    max-width: 496px; 
+    text-align: center;
+    margin: 0 auto; 
+    margin-bottom: 48px;  
+  }
+}
+
+@media only screen and (min-width: 1156px) {
+    .hero-title {        
+        font-size: 56px; 
+        line-height: 1.07; 
+        max-width: 496px; 
+        text-align: center;
+        margin: 0 auto; 
+        margin-bottom: 48px; 
+    }
+  }
 
 .hero-section .section-title {
     color: #FFFFFF;
@@ -326,6 +392,7 @@ img {
 /* #region Our Team */
 .portfolio {
     background-color: #F4F4FD;
+    
 }
 
 .section-title {
@@ -498,16 +565,36 @@ img {
     column-gap: 24px;
     gap: 24px;
     row-gap: 48px;
-    transform: translateY(0%);    
+    transform: translateY(0%);
+        
 }
 
+
 .portfolio-list .portfolio-item {
-    width: calc((100% - 48px) / 3);    
+    width: calc(100% - 48px); 
+    --items: 1;   
 }
+
+@media only screen and (min-width: 768px) {
+  .portfolio-list .portfolio-item {
+    width: calc((100% - 48px) / 2);
+    --indent-col: 32px;
+    --indent-row: 32px;
+    --items: 2;  
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .portfolio-list .portfolio-item {    
+        flex-basis: calc((100% - 3 * 24px) / 3);
+        --indent-row: 24px;
+        --items: 4;  
+    }
+  }
 .portfolio-list .portfolio-item {
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 48px) / 3);
+    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .portfolio-item:nth-last-child(-n+3) {
@@ -515,8 +602,9 @@ img {
 }
 .portfolio-list .portfolio-item:first-child {
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 48px) / 3);
+    
 }
+
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
@@ -996,5 +1084,109 @@ img {
 
 
 /* #end Region Modal */
+/* region Mobile Menu */
+.mobile-menu-btn {
+    width: 28px; 
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    background-color: transparent;
+    border: 1px solid #e7e9fc;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #ffffff;
+    padding: 72px 16px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-menu .mobile-menu-btn {
+    
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #2e2f42;
+    border-radius: 50%;
+    border: 1px solid #e7e9fc;
+}
+.mobile-menu-btn svg {
+    
+    stroke: currentColor;
+}
+.mobile-menu .mobile-menu-btn:active{
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    border-color: transparent;
+}
+.mobile-menu-nav li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-nav {
+    margin-bottom: auto;
+}
+
+.mobile-menu-nav a {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    color: #2E2F42;
+}
+.mobile-menu-nav a.current {
+    color: #4D5AE5;
+}
+.mobile-menu-contacts {
+    margin-bottom: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #434455;
+}
+
+.mobile-menu-contacts li:first-child a {
+    color: #4D5AE5;
+}
+.mobile-menu-contacts li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-menu-socials {
+    display: flex;
+    justify-content: center; 
+    gap: 12px; 
+}
+
+.social-media-item {
+    list-style: none;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+}
+/* end region Mobile Menu */
 
 
