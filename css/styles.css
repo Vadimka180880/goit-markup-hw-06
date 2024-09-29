@@ -346,65 +346,87 @@ img {
 
 /* #region Effective Solutions */
 /* Second Section Styles */
-.list-features {
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.Studio {
-    font-size: 20px; 
-    font-weight: 500; 
-    line-height: 1.2; 
-    letter-spacing: 0.02em; 
-    text-align: center; 
-    color: #2e2f42; 
-    text-transform: uppercase; 
-}
-
-.title {
-    font-size: 20px; 
-    font-weight: 500; 
-    line-height: 1.2;
-    letter-spacing: 0.02em; 
-    color: #2e2f42; 
-    
-}
-
 .features-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.features-list .feature-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    padding: 40px 0;
+    background-color: #f4f4fd;
 }
 
 .features-list {
     display: flex;
+    flex-direction: column;
     gap: 24px;
-}                                                           
-.description{
-    color: #4d5ae5;
-    letter-spacing: 0.02em; 
-    line-height: 1.2;
 }
-.feature-icon {
-    width: 64px;
-    height: 64px;
-    fill: currentColor; 
+
+.feature-item {
+    background-color: #ffffff;
+    padding: 24px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    flex-basis: 100%;
 }
 
 .feature-icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;    
+    display: none;
 }
 
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #434455;
+}
+
+@media only screen and (min-width: 768px) {
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        flex-basis: calc(50% - 12px);
+    }
+
+    .feature-icon-container {
+        display: none;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1156px) {
+    .feature-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .feature-icon-container {
+        display: block;
+        margin-bottom: 16px;
+        background-color: #e7e9fc;
+        padding: 24px;
+}
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
 
 /* #endregion Effective Solutions */
 
