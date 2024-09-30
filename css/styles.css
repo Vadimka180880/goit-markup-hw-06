@@ -648,12 +648,12 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  .portfolio-list .portfolio-item {
+.portfolio-list .portfolio-item {
     width: calc((100% - 48px) / 2);
     --indent-col: 32px;
     --indent-row: 32px;
     --items: 2;  
-  }
+}
 }
 
 @media only screen and (min-width: 1158px) {
@@ -662,7 +662,7 @@ img {
         --indent-row: 24px;
         --items: 4;  
     }
-  }
+}
 .portfolio-list .portfolio-item {
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
@@ -734,200 +734,182 @@ img {
 }
 /* #endregion */
 
-/* #region footer */
-
+/* footer region */
 /* Основні стилі для мобільних пристроїв */
+
 .footer {
     background-color: #2E2F42;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-  }
-  
-  .footer-logo {
+    gap: 32px;
+}
+
+.footer .footer-content {
+    text-align: center;
+}
+
+.footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
-    max-width: 264px;
-  }
-  
-  .footer-social-media {
-    text-align: center;
-  }
-  
-  .social-text {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 16px;
-  }
-  
-  .social-media-icons {
+}
+
+.social-media-icons {
     display: flex;
-    justify-content: center;
     gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .social-media-icon-link {
-    display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.social-media-icon-item {
     width: 40px;
     height: 40px;
+}
+
+.social-media-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4d5ae5;
     border-radius: 50%;
-  }
-  
-  .social-media-icon {
-    fill: #f4f4fd;
-  }
-  
-  .social-media-icon-link:hover,
-  .social-media-icon-link:focus {
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms ease-in-out;
+}
+
+.social-media-icon-link:hover {
     background-color: #31d0aa;
-  }
-  
-  .footer-subscribe {
-    text-align: center;
-  }
-  
-  .subscribe-text {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 16px;
-  }
-  
-  .subscribe-form {
+}
+
+.social-media-icon {
+    fill: #ffffff;
+}
+
+.subscribe-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-  }
-  
-  .input-email {
-    width: 100%;
-    max-width: 300px;
+}
+
+.input-email {
+    width: 240px;
     height: 40px;
-    padding-left: 16px;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
+    padding: 0 16px;
     border-radius: 4px;
-  }
-  
-  .input-email::placeholder {
+}
+
+.input-email::placeholder {
     color: #ffffff;
-  }
-  
-  .btn-subscribe {
+}
+
+.btn-subscribe {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 150px;
-    height: 40px;
-    background-color: #4D5AE5;
+    justify-content: center;
+    background-color: #4d5ae5;
     color: #ffffff;
-    border-radius: 4px;
     border: none;
-  }
-  
-  .btn-subscribe:hover {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+
+.btn-subscribe:hover {
     background-color: #404bbf;
-  }
-  
-  .btn-subscribe .social-subscribe {
-    margin-left: 8px;
+}
+
+.btn-subscribe svg {
     fill: #ffffff;
-  }
-  
-  /* Медіа-запити для планшетів і десктопів */
-  @media only screen and (min-width: 768px) {
+    margin-left: 8px;
+}
+
+@media (min-width: 768px) {
     .footer {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 60px 40px;
-      align-items: flex-start;
+        padding: 60px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
     }
-  
-    .footer-content {
-      text-align: left;
-      max-width: 350px;
+
+    .footer .footer-content {
+        text-align: left;
     }
-  
-    .footer-social-media,
-    .footer-subscribe {
-      margin-top: 0;
-      align-items: flex-start;
-      text-align: left;
-    }
-  
-    .social-media-icons {
-      justify-content: flex-start;
-    }
-  
+
     .subscribe-form {
-      flex-direction: row;
+        flex-direction: row;
+        gap: 16px;
     }
-  
-    .input-email {
-      max-width: 250px;
-    }
-  
-    .btn-subscribe {
-      max-width: 150px;
-    }
-  }
-  
-  @media only screen and (min-width: 1156px) {
+}
+
+@media (min-width: 1156px) {
     .footer {
-      padding: 80px 60px;
+        padding: 80px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-  
-    .footer-subscribe {
-      flex-direction: row;
-      align-items: flex-end;
-      gap: 24px;
+
+    .footer-content {
+        margin-right: 120px;
     }
-  }
-  
+
+    .social-media-icons {
+        justify-content: flex-start;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+
+    .input-email {
+        width: 264px;
+    }
+}
+
 /* end footer subscribe */
 /* #endregion footer */
-/* #Region Modal */
+
+/* Основні стилі для мобільного і планшетів */
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     background-color: rgba(46, 47, 66, 0.4);
     height: 100%;
     width: 100%;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
 }
 
 .modal {
     position: absolute;
-    padding: 72px 24px 24px 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    width: 95%; /* Зменшення ширини для мобільних пристроїв */
+    max-width: 320px; /* Максимальна ширина для планшетів */
+    padding: 48px 16px; /* Зменшення відступів */
+    min-height: 300px; /* Зменшена висота для мобільних пристроїв */
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -936,8 +918,8 @@ img {
 
 .modal-btn {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 16px; /* Менший відступ для мобільних пристроїв */
+    right: 16px;
     width: 24px;
     height: 24px; 
     border-radius: 50%; 
@@ -950,67 +932,21 @@ img {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-icon-close {
-    fill: #000000; 
-}
-
-.form-input:focus + .input-icon svg {
-    fill: #4D5AE5; 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: #404bbf;
-    border: none;
-}
-
-
-.modal-btn:hover svg,
-.modal-btn:focus svg {
-    fill: #ffffff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
 
 .modal-caption {
     width: 100%;
     font-weight: 500;
     text-align: center;
     color: #2E2F42;
-    border-radius: 4px 0 0 0;
-    margin-bottom: 16px;
-}
-
-.form-label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.form-group {
-    margin-bottom: 16px; 
-}
-
-.input-container {
-    position: relative;
-    display: flex;
-    align-items: center;
+    margin-bottom: 12px; /* Менший відступ для мобільних пристроїв */
 }
 
 .form-input {
-    width: 100%;
+    width: 100%; /* Ширина на весь екран */
     height: 40px;
-    padding-right: 16px;
-    padding-left: 38px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px; /* Зменшені відступи */
+    font-size: 14px; /* Зменшений розмір тексту */
+    line-height: 1.2;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
@@ -1018,122 +954,37 @@ img {
     outline: transparent;
 }
 
-#user-comment:focus,
-#user-name:focus {
-    border-color: #4D5AE5; 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-
-.input-icon {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: #2E2F42;
-    border-color: #4D5AE5;    
-}
-
-.input-container:hover .input-icon,
-.input-container:focus-within .input-icon {
-    fill: #4D5AE5; 
-}
-
-.modal .modal-btn:hover,
-.modal .modal-btn:focus {
-    background-color: #404bbf;
-    border: none;
-}
-
+/* Стилі для текстових полів на мобільних */
 .textarea-input {
     width: 100%;
     height: 120px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    font-size: 14px;
+    padding: 8px 16px;
     border-radius: 4px;
     background-color: transparent;
-    display: block;
-    padding: 8px 16px;
-    outline: transparent;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus,
-.textarea-input:focus {
-    border-color: #4D5AE5; 
-}
-
-/* Загальний контейнер для чекбоксу */
-.checkbox-container {
-    margin-bottom: 24px; 
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    fill: #F4F4FD;
-}
-
-.checkbox-label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--label-color, #8e8f99);     
-    align-items: center;
-    cursor: pointer;
-}
-
-.checkbox-box {
-    width: 16px;
-    height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: transparent;
-    margin-right: 8px; 
+    resize: none;
 }
 
-.checkbox-icon {
-    width: 10px;
-    height: 8px;
-    
+/* Адаптивність для планшетів */
+@media (min-width: 768px) {
+    .modal {
+        max-width: 600px; /* Більший розмір для планшетів */
+        min-height: 400px;
+        padding: 64px 24px;
+    }
+
+    .modal-caption {
+        margin-bottom: 16px;
+        font-size: 16px; /* Збільшений розмір шрифту для планшетів */
+    }
+
+    .form-input,
+    .textarea-input {
+        font-size: 16px; /* Збільшений розмір шрифту */
+    }
 }
 
-#user-privacy:checked + .checkbox-label .checkbox-box {
-    background-color: var(--checked-bg-color, #404bbf); 
-    fill: var(--icon-fill-color);
-    border: none;
-}
-
-#user-privacy:checked + .checkbox-label .checkbox-box .checkbox-icon {
-    fill: var(--checked-icon-color, #F4F4FD); 
-}
-
-.privacy-link {
-    color: var(--link-color, #4d5ae5);
-    text-decoration: none;
-}
-
-.privacy-link:hover,
-.privacy-link:focus {
-    text-decoration: underline;
-}
-
-
-/* #end Region Modal */
 /* region Mobile Menu */
 .mobile-menu-btn {
     width: 28px; 
@@ -1164,7 +1015,7 @@ img {
     height: 100dvh;
     background-color: #ffffff;
     padding: 72px 16px 40px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .mobile-menu .mobile-menu-btn {
