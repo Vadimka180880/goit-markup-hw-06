@@ -1001,9 +1001,9 @@ img {
     margin-left: auto;
 }
 @media only screen and (min-width: 768px) {
-  .mobile-menu-btn {
+.mobile-menu-btn {
     display: none;
-  }
+    }
 }
 
 .mobile-menu {
